@@ -1,7 +1,7 @@
 [gd_scene load_steps=23 format=3 uid="uid://cwk7cpvukyqg6"]
 
 [ext_resource type="Texture2D" uid="uid://q12gfyj1t76k" path="res://Art/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Characters/Free Cow Sprites.png" id="1_8qmvh"]
-[ext_resource type="Script" path="res://Characters/cow.cs" id="1_ptxbl"]
+[ext_resource type="Script" path="res://Characters/Cow.cs" id="1_dbd1i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aadpw"]
 size = Vector2(27, 18)
@@ -124,7 +124,7 @@ _data = {
 }
 
 [node name="CowCharacter" type="CharacterBody2D"]
-script = ExtResource("1_ptxbl")
+script = ExtResource("1_dbd1i")
 
 [node name="CowSprite" type="Sprite2D" parent="."]
 texture = ExtResource("1_8qmvh")

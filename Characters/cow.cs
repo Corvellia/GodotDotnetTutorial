@@ -1,7 +1,9 @@
-using Godot;
 using System;
+using Godot;
 
-public partial class cow : CharacterBody2D
+namespace TestingGodot.Characters;
+
+public partial class Cow : CharacterBody2D
 {
 	[Export]
 	public int Speed { get; set; } = 100;
@@ -54,7 +56,7 @@ public partial class cow : CharacterBody2D
 		MoveDirection = new Vector2(
 			rng.Next(-1, 1),
 			rng.Next(-1, 1)
-			);
+		);
 
 		if(MoveDirection.X < 0)
 		{
