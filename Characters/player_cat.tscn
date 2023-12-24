@@ -1,6 +1,6 @@
 [gd_scene load_steps=29 format=3 uid="uid://c33jhjoq6fdk5"]
 
-[ext_resource type="Script" path="res://Characters/player_cat.cs" id="1_cgcp8"]
+[ext_resource type="Script" path="res://Characters/PlayerCat.cs" id="1_cgcp8"]
 [ext_resource type="Texture2D" uid="uid://b7u53aiftjqsy" path="res://Art/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Spritesheet.png" id="1_il0l5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d305c"]
@@ -246,6 +246,7 @@ script = ExtResource("1_cgcp8")
 texture = ExtResource("1_il0l5")
 hframes = 4
 vframes = 4
+frame = 9
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_d305c")

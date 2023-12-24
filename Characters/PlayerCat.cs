@@ -1,9 +1,11 @@
 using Godot;
-using System;
 
 //parameters/Idle/blend_position
 
-public partial class player_cat : CharacterBody2D
+
+namespace TestingGodot.Characters;
+
+public partial class PlayerCat : CharacterBody2D
 {
 	[Export]
 	public int Speed { get; set; } = 100;
@@ -27,16 +29,16 @@ public partial class player_cat : CharacterBody2D
 	public override void _Process(double delta)
 	{
 		var inputDirection = new Vector2
-			(
-				Input.GetActionStrength("right") - Input.GetActionStrength("left"),
-				Input.GetActionStrength("down") - Input.GetActionStrength("up")
-			);
+		(
+			Input.GetActionStrength("right") - Input.GetActionStrength("left"),
+			Input.GetActionStrength("down") - Input.GetActionStrength("up")
+		);
 
 		UpdateAnimationParameters(inputDirection);
 
 		Velocity = inputDirection * Speed;
 
-		var sprite2D = GetNode<Sprite2D>("Cat");
+		GetNode<Sprite2D>("Cat");
 		MoveAndSlide();
 		PickNewState();
 	}
