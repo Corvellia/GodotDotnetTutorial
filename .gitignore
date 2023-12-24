@@ -1,2 +1,7 @@
 # Godot 4+ specific ignores
 .godot/
+*.vsidx
+/.vs/Testing-Godot/FileContentIndex/4d22c628-cd38-4dcc-b2f8-053aec933d42.vsidx
+/.vs/Testing-Godot/FileContentIndex/07ecafc0-3062-4c2b-99f4-67379eb8e207.vsidx
+/.vs/Testing-Godot/FileContentIndex/e9954cd4-0fbb-47bc-87ef-5dc30475df0b.vsidx
+/.vs/Testing-Godot/FileContentIndex/39bb2d0b-6b93-4977-9931-1c85c682ac1d.vsidx
